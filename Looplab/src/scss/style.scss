@@ -1,0 +1,86 @@
+$bg-color: #333;
+$home-height: 900px;
+$font-color: #fff;
+$primary-color: #008ed6;
+$dark-overlay: rgba(0,0,0,0.7);
+$icon-size: 30px;
+
+body {
+	background: $bg-color;
+	color: $font-color;
+}
+
+
+/*----------------------------*/
+/* --------- NAVBAR --------- */
+/*----------------------------*/
+
+.navbar {
+	border-bottom: $primary-color 3px solid;
+	opacity: 0.8;
+}
+
+/*----------------------------*/
+/* ------ HOME SECTION ------ */
+/*----------------------------*/
+
+#home-section {
+	background-image: url('../img/home.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	min-height: $home-height;
+	
+	.dark-overlay {
+		background-color: $dark-overlay;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		min-height: $home-height;
+	}
+	
+	.home-inner {
+		padding-top: 150px;
+	}
+	
+	.card-form {
+		opacity: 0.8;
+	}
+	
+	.fa {
+		color: $primary-color;
+		background: #fff;
+		padding: 4px;
+		border-radius: 5px;
+		font-size: $icon-size;
+	}
+}
+
+/*----------------------------*/
+/* ---- EXPLORE SECTION ---- */
+/*----------------------------*/
+
+#explore-section, #share-section {
+	.fa {
+		color: #fff;
+		background: #333;
+		padding: 4px;
+		border-radius: 5px;
+		font-size: $icon-size;
+	}
+}
+
+/*----------------------------*/
+/* ----- CREATE SECTION ----- */
+/*----------------------------*/
+
+#create-section {
+	.fa {
+		color: $primary-color;
+		background: #fff;
+		padding: 4px;
+		border-radius: 5px;
+		font-size: $icon-size;
+	}
+}
